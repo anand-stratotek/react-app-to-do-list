@@ -6,7 +6,7 @@ const DisplayList = ({ items, onRemoveButtonClick }) => {
       <ul>
         {items &&
           items.length > 0 &&
-          items.map((item, index) => (
+          items.map((item) => (
             <div
               style={{
                 display: 'flex',
@@ -15,7 +15,7 @@ const DisplayList = ({ items, onRemoveButtonClick }) => {
                 width: 200,
               }}
             >
-              <li key={item + index}>{item}</li>
+              <li>{item}</li>
               <button onClick={() => onRemoveButtonClick(item)}>
                 - Remove
               </button>
